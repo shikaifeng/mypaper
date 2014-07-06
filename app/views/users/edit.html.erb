@@ -1,0 +1,10 @@
+<h1>Editing User</h1>
+
+  <p>
+    <th>Avatar:</th><br>
+    <%= image_tag @user.avatar.url(:medium) %>
+  </p>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', user_path %>

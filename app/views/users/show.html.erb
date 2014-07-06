@@ -1,0 +1,15 @@
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @user.description %>
+</p>
+<p>
+  <strong>Avatar:</strong><br>
+  <%= image_tag @user.avatar.url(:medium) %>
+</p>
+
+<%= link_to 'Back to list', users_path %>
+<%= link_to 'Edit', edit_user_path(@user) %>
